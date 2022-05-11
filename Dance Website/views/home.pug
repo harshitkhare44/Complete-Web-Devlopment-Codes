@@ -1,0 +1,47 @@
+extends base.pug
+block scripts
+    script(src='../static/index.js')
+  
+block style 
+    style
+        include ../static/style.css
+
+block content 
+ 
+    section#introSection 
+      div Welcome to Harshit Dance Academy
+      div.small Live learn Dance Repeat
+    section#missionSection 
+      h2 Our mission
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img 
+            img(src="/static/img/1.jpg")
+          div.card-content
+            p This is the best Dance Academy Of Mumbai 
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img 
+            img(src="/static/img/2.jpg")
+          div.card-content
+            p This is the best Dance Academy Of Mumbai 
+        
+      div.card
+        h3 Expert teaching
+        div.card-box
+          div.card-img 
+            img(src="/static/img/3.png")
+          div.card-content
+            p This is the best Dance Academy Of Mumbai 
+
+    section#sponsorSection 
+      h2 Our Sponsors 
+      div#sponsor
+        img(src="../static/img/logo1.webp", alt="Sponser Image" Class="spImage")
+        img(src="../static/img/logo2.jpg", alt="Sponser Image" Class="spImage")
+        img(src="../static/img/logo3.jpg", alt="Sponser Image" Class="spImage")
+        img(src="../static/img/logo4.png", alt="Sponser Image" Class="spImage")
+
+    

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: black;
+            border: 2px\ solid grey;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quae doloremque repellendus!
+            Corporis, tenetur soluta saepe vel quidem iure dolores ipsam asperiores. Rem quisquam eum reprehenderit ut
+            corporis voluptas officia, nemo veniam obcaecati aliquam quas distinctio autem sint vel molestias nulla
+            corrupti, quam sit beatae ipsam reiciendis enim asperiores natus nihil. Ipsum porro, labore, quae facere
+            error saepe consequuntur iure vero amet eum a veritatis placeat aut animi impedit facilis sapiente
+            inventore! Incidunt alias neque consequuntur similique impedit officiis, accusamus, cum temporibus dolorum
+            obcaecati odit dolores voluptates error illum. Velit ipsam impedit vel, amet laborum praesentium beatae
+            dicta error reiciendis est expedita dolorum odio laboriosam quos omnis nam molestiae illum sed unde numquam.
+            Delectus facilis voluptatem fuga rem animi incidunt eligendi similique earum reiciendis nulla voluptatum
+            accusantium magnam in sed molestias, eaque nam optio quibusdam necessitatibus molestiae! Nulla voluptatibus
+            nesciunt, quisquam natus quas sequi, cum dolor maiores nihil autem eius enim eveniet officiis! Culpa,
+            deserunt necessitatibus vero assumenda quaerat aspernatur nostrum, dolor nam quos aliquid itaque inventore
+            error sit sapiente mollitia expedita? Veritatis ab quas autem quasi debitis sunt consequuntur. Quaerat
+            tenetur illum dolorum, deleniti ratione blanditiis, nulla reiciendis dolore labore illo recusandae assumenda
+            magnam dolor soluta eos repellendus enim corrupti molestiae expedita. Eaque, deleniti ad atque laudantium
+            enim dicta incidunt aperiam vitae molestias, impedit officiis unde soluta ratione quasi exercitationem quod
+            quam sapiente aspernatur quos iusto. Accusamus, eveniet veniam! Dolores, maiores suscipit.</p>
+    </div>
+    <button id="btn" onclick="toogleHide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run()
+        {
+            alert('Mouse Inside');
+            console.log('mouse inside');
+        });
+        para.addEventListener('mouseout',function run()
+        {
+            alert('Mouse now Outside');
+            console.log('Mouse now Outside');
+        });
+        function toogleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display !='none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+            }
+
+    </script>
+</body>
+
+</html>

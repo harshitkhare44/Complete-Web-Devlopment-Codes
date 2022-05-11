@@ -1,0 +1,192 @@
+doctype html
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Befikra Community
+  link(rel='stylesheet' href='../static/style.css')
+  script(src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous')
+  script(src='https://kit.fontawesome.com/yourcode.js' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js')
+  script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+.scroll-up-btn
+  i.fa.fa-angle-up
+nav.navbar
+  .max-width
+    .logo
+      a(href='#')
+        | Befikra
+        span Community.
+    ul.menu
+      li
+        a.menu-btn(href='#home') Home
+      li
+        a.menu-btn(href='#about') About
+      li
+        a.menu-btn(href='#services') Services
+     
+      // <li><a href="#teams" class="menu-btn">Teams</a></li>
+      li
+        a.menu-btn(href='#contact') Contact Us
+    .menu-btn
+      i.fa.fa-bars
+// home selection start
+section#home.home
+  .max-width
+    .home-content
+      .text-1 Our company&apos;s mission
+      .text-2
+        | Uniting Learners, Mentors, Developers and
+        | Companies all over the World in
+        | Technology sector
+      .text-3
+        | We offer our platform to: 
+        span.typing
+      a(href='#') Hire us
+// about section start
+section#about.about
+  .max-width
+    h2.title About Us
+    .about-content
+      .column.left
+        img(src='../static/img/BLogo.jpg' alt='')
+      .column.right
+        .text
+          | Our community for 
+          span.typing-2
+        p
+          | Platform for getting
+          | resources, internships
+          | and exciting projects.
+          br
+          | To provide interns,
+          |         developers and startup
+          |         growth ecosystem
+        a(href='#') Join Us
+// services section start
+section#services.services
+  .max-width
+    h2.title Our Services
+    .serv-content
+      .card
+        .box
+          i.fa.fa-openid
+          .text Tech Department
+          p
+            | Web development,
+            | Application development,
+            | Artificial Intelligence project,
+            | Specific programming languages like C, Java, Python, C++, etc,
+            | Bot making,
+            | Machine learning &amp; Deep learning,
+            | Arduino,
+            | Computer Vision,
+            | Game development,
+            | Ethical Hacking,
+            | Open source projects
+      .card
+        .box
+          i.fa.fa-free-code-camp
+          .text Social Department
+          p
+            | Digital Marketing,
+            | Public Relation,
+            | Hiring Interns,
+            | Personality Development
+      .card
+        .box
+          i.fa.fa-houzz
+          .text Content Creation
+          p
+            | Logo,
+            | Template,
+            | Quizzes,
+            | Google forms,
+            | PPT,
+            | Business Card,
+            | Slogan and Tagline,
+            | Content writing,
+            | Video Editing
+// team section start
+section#teams.teams
+  .max-width
+    h2.title Our team
+    .carousel.owl-carousel
+      .card
+        .box
+          img(src='../static/img/Akash Jaiswal.jpeg' alt='')
+          .text Akash Jaiswal
+          .text1 Tech Lead
+      .card
+        .box
+          img(src='../static/img/Lakshita Jain.jpeg' alt='')
+          .text Lakshita Jain
+          .text1 Sales and Marketing Head
+      .card
+        .box
+          img(src='../static/img/Nitesh Mishra.png' alt='')
+          .text Nitesh Mishra
+          .text1 Management head
+      .card
+        .box
+          img(src='img/img6.jpeg' alt='')
+          .text Anurag
+          .text1
+      .card
+        .box
+          img(src='img/img6.jpeg' alt='')
+          .text Nitesh Jagwani
+          .text1
+// contact section start
+section#contact.contact
+  .max-width
+    h2.title Contact Us
+    .contact-content
+      .column.left
+        .text Get in Touch
+        p
+          | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis vero ullam cum officia blanditiis tempore veniam doloribus debitis voluptatibus modi.
+        .icons
+          .row
+            i.fa.fa-user
+            .info
+              .head Name
+              .sub-title Harshit Khare
+          .row
+            i.fa.fa-map-marker
+            .info
+              .head Address
+              .sub-title Shastri colony chakki ghat road katni (M.P) 483501 INDIA
+          .row
+            i.fa.fa-envelope
+            .info
+              .head Email
+              .sub-title harshitkhare44@gmail.com
+      .column.right
+        .text Message Us
+        form(action='/' method='post' id='contact')
+          .field
+            .field.name
+              input(type='text' name='name' id ='name' placeholder='Name' required='')
+            .field.email
+              input(type='email' name='email' id='email' placeholder='Email' required='')
+          .field
+            input(type='text' name='subject' id ='subject' placeholder='Subject')
+          .field.textarea
+            textarea(cols='30' rows='10' name='describe' id ='describe' placeholder='Describe project' required='')
+          .button
+            button(ty='' pe='submit') Send message
+// footer section start
+footer
+  span
+    | Created By  
+    a(href='#')  codewithHarshit
+    |  | 
+    span.fa.fa-copyright
+    | 2021 All right reserved.
+script(src='../static/index.js')

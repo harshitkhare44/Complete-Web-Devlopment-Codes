@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Harshit Dance Website
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul 
+        div#logo
+          img(src="../static/img/logo.png")
+          |HDA
+     
+        li #[a(href="/")  Home ]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact] 
+    section#introSection 
+      div Welcome to Harshit Dance Academy
+      div.small Live learn Dance Repeat
+    section#missionSection 
+      h2 Our mission
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img 
+            img(src="/static/img/1.jpg")
+          div.card-content
+            p This is the best Dance Academy Of Mumbai 
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img 
+            img(src="/static/img/2.jpg")
+          div.card-content
+            p This is the best Dance Academy Of Mumbai 
+        
+      div.card
+        h3 Expert teaching
+        div.card-box
+          div.card-img 
+            img(src="/static/img/3.png")
+          div.card-content
+            p This is the best Dance Academy Of Mumbai 
+
+    section#sponsorSection 
+      h2 Our Sponsors 
+      div#sponsor
+        img(src="../static/img/logo1.webp", alt="Sponser Image" Class="spImage")
+        img(src="../static/img/logo2.jpg", alt="Sponser Image" Class="spImage")
+        img(src="../static/img/logo3.jpg", alt="Sponser Image" Class="spImage")
+        img(src="../static/img/logo4.png", alt="Sponser Image" Class="spImage")
+    footer#footer 
+      | Copyright @ 2021 HarshitDanceAcademy | All right reserved
+    script
+      include ../static/index.js
